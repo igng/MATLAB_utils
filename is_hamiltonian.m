@@ -7,7 +7,7 @@ function bool = is_hamiltonian(A)
     n = n/2;
     I = eye(n);
     J = [zeros(n), I; -I, zeros(n)];
-    JA = J*A
-    AJ = transpose(JA)
+    JA = J*A;
+    AJ = transpose(JA);
     bool = isequal(JA, AJ);
 end
